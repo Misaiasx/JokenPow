@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DevClub JokenPô</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JokenPô</h1>
+      <div class="buttons">
+        <button id="rock" onclick="playHuman('rock')">
+          &#x1F44A;&#x1F3FC;
+        </button>
+        <button id="paper" onclick="playHuman('paper')">
+          &#x270B;&#x1F3FC;
+        </button>
+        <button id="scissors" onclick="playHuman('scissors')">
+          &#x270C;&#x1F3FC;
+        </button>
+      </div>
+      <p class="result"></p>
+
+      <p class="your-score">Sua Pontuação:<span id="human-score">0</span></p>
+      <p class="machine-score">
+        Pontuação da Alexa: <span id="machine-score">0</span>
+      </p>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
